@@ -1,7 +1,8 @@
 body {
-	background: #fff;
+/*	background: #fff;*/
 	color: #333;
 	font-size: 16px
+background: linear-gradient(to bottom, rgb(26, 24, 69) 0%, rgb(0, 79, 139) 80%);
 }
 
 h2 {
@@ -124,9 +125,13 @@ pre code {
 	background: #fff;
 }
 
+.foot{
+    background-color:#FF0040;
+    
+}
+
 #footer {
-	padding: 3em 0;
-	background: #e6e7e8;
+
 }
 
 #footer a {
@@ -157,8 +162,13 @@ pre code {
 
 /** Intro **/
 
+* {
+margin: 0;
+padding: 0;lang}
+
 #intro {
-	padding: 0 0 100%;
+/*padding: 0 0 0;*/
+min-height:100%;
 	color: #fff;
 
 	background: #1a1845;
