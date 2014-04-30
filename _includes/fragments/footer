@@ -1,10 +1,12 @@
-<footer>
-<div class="container">
- deep into the ocean
-</div>
-</footer>
 <script src="components/jquery/dist/jquery.min.js"></script>
 <script src="components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script type="text/javascript">
+$('div#intro div:last').each(function() {    
+  var p = $(this);
+  var s = $(window).height()-442;
+  $(this).height(s);
+});
+</script>
 <script src="js/kraken.js"></script>
 </body>
 </html>
