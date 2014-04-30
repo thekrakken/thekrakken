@@ -1,27 +1,6 @@
 $(function (window, $, undefined) {
 	'use strict';
 
-	var $docnav = $('#documentation-nav .nav');
-
-
-
-	// Construct navigation elements -- kaboom!
-    $('#documentation h2, #documentation h3').each(function(idx, el) {
-		var $el = $(el);
-
-		$docnav.append('<li><a href="#' + $el.attr('id') + '">' + $el.text() + '</a></li>');
-    });
-
-
-	// Stickify the menu
-    $docnav.affix({
-        offset: {
-            top: $docnav.offset().top + 10
-        }
-    });
-
-
-    // Bubbles
     for (var i = 0; i < 10; i++) {
         setTimeout(makeBubble, Math.random() * 10 * 1000);
     }
